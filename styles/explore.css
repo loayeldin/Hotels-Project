@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap");
+
+:root{
+  --text-color: rgb(57,67,119);
+  --border-color:rgb(101,102,135);
+  --main-color:rgb(235,102,43);
+}
+.text-color{
+  color:var(--text-color);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color)
+}
+.explore-container{
+  width: 90%;
+  margin: auto;
+  overflow-x: hidden !important;
+}
+.explore-section h1{
+  text-transform: capitalize;
+  color: var(--text-color);
+  font-size: 2.2rem;
+}
+.explore-section .filter-btn{
+  background-color: var(--text-color);
+  text-transform: capitalize;
+  margin-left: 5px;
+  color: white;
+  display: none;
+}
+.explore-section .filter-btn .fa-filter{
+  color: white;
+  margin-left:7px ;
+}
+/*accordin style*/
+
+
+.explore-section .filter-cat .travel-date{
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+ 
+}
+
+
+
+
+.explore-section .filter-cat .accordion-header .accordion-button{
+  font-size: 18px !important;
+  font-weight: 600;
+  box-shadow: none !important;
+  border: none !important;
+}
+.explore-section .filter-cat .accordion-header .accordion-button:not(.collapsed){
+  background-color: transparent !important;
+  color: var(--text-color) !important;
+  border-bottom: none !important;
+
+}
+.explore-section .accordion .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23394377'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg);
+}
+.explore-section .filter-cat .accordion-header .accordion-button:not(.collapsed):focus{
+  box-shadow: none !important;
+  border: none !important;
+
+}
+.explore-section .accordion .accordion-body{
+  padding-top: 5px !important;
+}
+.explore-section .accordion-body input:checked{
+  background-color: var(--text-color); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/*hotels style*/
+.explore-section .hotels .hotels-cards{
+
+}
+.explore-section .hotels .hotels-cards img{
+  object-fit: cover;
+  border-radius: 20px;
+}
+.explore-section .hotels .hotels-cards .offer{
+  position: absolute;
+  left: 5%;
+  top: 6%;
+  background-color: var(--main-color);
+  padding: 6px;
+  border-radius: 10px;
+  color: white;
+}
+.explore-section .hotels .hotels-cards .love{
+  position: absolute;
+  top: 6%;
+  right: 6%;
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 50%;
+  color: white;
+}
+.explore-section .hotels .hotels-cards .featured{
+  position: absolute;
+  left: 5%;
+  top: 6%;
+  background-color: var(--text-color);
+  padding: 6px;
+  border-radius: 10px;
+  color: white;
+}
+.explore-section .hotels .hotels-cards .love .fa-heart {
+  color: black;
+  font-size: 17px;
+}
+.explore-section .hotels .hotels-cards .card-body .fa-star{
+    color: #e2ad64;
+}
+.explore-section .hotels .hotels-cards .card-body .features{
+  text-transform: capitalize;
+  color: var(--main-color);
+}
+.explore-section .hotels .hotels-cards .card-body .flex-wrapper{
+  border-left: 1px solid #d5dae2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.explore-section .hotels .hotels-cards .card-body .flex-wrapper .duration{
+  text-transform: capitalize;
+ 
+  color: var(--text-color);
+}
+.explore-section .hotels .hotels-cards .card-body .flex-wrapper .price-details{
+  text-align: center;
+}
+.explore-section .hotels .hotels-cards .card-body .flex-wrapper .price-details del{
+  color: #d5dae2;
+}
+.explore-section .hotels .hotels-cards .card-body .flex-wrapper .price-details .price{
+  font-size: 19px;
+  font-weight: 500;
+}
+.explore-section .hotels .hotels-cards .card-body .flex-wrapper .price-details .details-btn{
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  text-transform: capitalize;
+  padding: 17px 33px ;
+}
+.explore-section .hotels .hotels-cards .card-body .flex-wrapper .price-details .details-btn i{
+  transform: rotate(-45deg);
+  margin-left: 5px;
+}
+
+
+.explore-section .hotels .pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.explore-section .hotels .pagination li {
+  margin: 0 5px;
+  padding: 8px 13px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+
+.explore-section .hotels .pagination li.numb {
+  background-color: white;
+  color: #000;
+}
+
+
+.explore-section .hotels .pagination li.active {
+  background-color:var(--main-color) ;
+  color: white;
+ 
+}
+
+
+.explore-section .hotels .pagination li.btn {
+  background-color: var(--main-color)!important;
+  color: white;
+  padding: 5px 13px !important;
+}
+.explore-section .hotels .pagination li.btn:hover {
+
+}
+
+.explore-section .hotels .pagination li:hover {
+  background-color: #f1f1f1;
+ 
+}
+
+
+@media (max-width: 1200px) { 
+  .explore-container{
+    width: 95%;
+    margin: auto;
+    overflow-x: hidden !important;
+  }
+}
+
+@media (max-width: 991px) { 
+  .explore-section .filter-cat{
+
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 0.5s ease, visibility 0.4s ease; 
+    height: 0;
+    overflow: hidden; 
+    }
+    .explore-section  .filter-cat.show {
+  
+        visibility: visible; 
+        opacity: 1; 
+        height: auto; 
+     
+    }
+  .explore-section .filter-btn{
+   
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .explore-section .hotels .hotels-cards .card-body .flex-wrapper{
+    border-top: 1px solid #d5dae2;
+    padding-top: 20px;
+    border-left: none;
+ 
+  }
+  .explore-section h1{
+ 
+    font-size: 1.5rem;
+  }
+}
