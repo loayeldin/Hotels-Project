@@ -147,12 +147,18 @@ header .auth .login {
     flex-wrap: wrap; 
     justify-content: space-between;
     width: 90%;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
   }
   .form {
         display: flex;
         flex-wrap: wrap; 
         justify-content: space-between;
         width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
   }
   form input, form textarea {
     margin-bottom: 10px;
@@ -320,6 +326,9 @@ header .auth .login {
     .contact-info {
       flex-direction: column;
       align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   
     .footer-column a {
@@ -329,5 +338,10 @@ header .auth .login {
     .newsletter-form input {
       width: 100%;
     }
+    @media (min-width: 768px) {
+        section {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
   }
-
