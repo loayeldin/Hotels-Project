@@ -96,3 +96,6 @@ function getProducts() {
 
 
 createPagination(totalPages, currentPage);
+
+
+
