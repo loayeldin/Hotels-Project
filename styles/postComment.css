@@ -1,4 +1,26 @@
 /* General Reset */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap");
+
+:root{
+  --text-color: rgb(57,67,119);
+  --border-color:rgb(101,102,135);
+  --main-color:rgb(235,102,43);
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color)
+}
+
+
 body, h1, h2, p, ul, blockquote, footer {
     margin: 0;
     padding: 0;
@@ -6,12 +28,13 @@ body, h1, h2, p, ul, blockquote, footer {
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: "Jost", sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
   }
-  /* Header */
+
+/* Header */
 header {
   background-color: #fff;
   padding: 20px 0;
@@ -26,9 +49,9 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 ;
 }
 
 header .logo img {
@@ -49,7 +72,7 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   font-size: 16px;
   transition: color 0.3s;
 }
@@ -59,18 +82,20 @@ header nav ul li a:hover {
 }
 header .auth a {
   text-decoration: none;
-  color: #FF7043;
+  color: var(--text-color);
   margin-left: 20px;
   font-size: 16px;
   transition: color 0.3s;
 }
 
 header .auth a:hover {
-  color: #333;
+  color: #FF7043;
 }
 
 header .auth .login {
-  font-weight: bold;
+  border-radius: 40em;
+  border: 1px solid rgba(0,0,0,.125);
+  padding: 10px 20px;
 }
 
 
@@ -88,7 +113,20 @@ header .auth .login {
   background: #333;
   transition: transform 0.3s, opacity 0.3s;
 }
-
+@media (max-width: 1200px) { 
+  header .container {
+   
+    max-width: 96%;
+    margin: 0 auto;
+    padding: 0 ;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    transition: color 0.3s;
+  }
+}
 
 @media (max-width: 768px) {
   header nav ul {
@@ -246,9 +284,14 @@ header .auth .login {
 /* footer */
 .footer {
   background-color: #f8f8f8;
-  padding: 4rem;
+  padding: 4rem 0px;
   margin-top: 4rem;
-  color: #333;
+  color: var(--text-color)
+}
+.footer .footer-container{
+  width: 90%;
+  margin: auto;
+
 }
 
 .footer-content {
@@ -260,15 +303,19 @@ header .auth .login {
 .footer-section {
   display: flex;
   align-items: center;
+
   justify-content: space-between;
 }
 
 .footer-section .follow-us {
   display: flex;
-  align-items: center;
-  margin-right: 7rem;
-}
+  align-items: baseline;
 
+}
+.footer-section .follow-us i {
+  color: var(--text-color);
+  margin-right: 10px;
+}
 .footer-section .follow-us ul {
   display: flex;
   gap: 4px;
@@ -276,7 +323,9 @@ header .auth .login {
 
 .contact-info {
   display: flex;
-  align-items: center;
+  align-items: start;
+
+  padding: 0px 18px;
   gap: 1rem;
   line-height: 1.6;
 }
@@ -340,45 +389,42 @@ header .auth .login {
 .newsletter-form button:hover {
   background-color: #f56a3f;
 }
-
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .footer-columns {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .footer-section {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer-section .follow-us {
-    margin-top: 1rem;
-   
-  }
 }
 
+
 @media (max-width: 768px) {
+ 
   
   .footer-columns {
     grid-template-columns: 1fr;
   }
-
-  .footer-section .follow-us {
+  .footer .footer-container{
+    width: 98%;
+    margin: auto;
+  
+  }
+  .footer-section {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
-  .contact-info {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    .contact-info p {
+      font-size: 14px;
+    }
+    .footer-column a {
+      font-size: 14px;
+    }
 
-  .footer-column a {
-    font-size: 14px;
-  }
-
-  .newsletter-form input {
-    width: 100%;
-  }
+    .newsletter-form input {
+      width: 100%;
+    }
 }
+
+
+
+

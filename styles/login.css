@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap");
 
-*{
-    text-decoration: none;
-    list-style: none;
-}
 :root{
   --text-color: rgb(57,67,119);
   --border-color:rgb(101,102,135);
   --main-color:rgb(235,102,43);
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -21,11 +23,18 @@
 ::-webkit-scrollbar-thumb {
   background: var(--main-color)
 }
-
 body {
-  font-family: "Jost", sans-serif;
-
+    font-family: "Jost", sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 /* Header */
 header {
   background-color: #fff;
@@ -154,121 +163,266 @@ header .auth .login {
     display: none;
   }
 }
-  /* second section */
-.container {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 20px; 
 
-  }
+/* Main Content Styles */
+.main-content {
+    padding: 2rem 0;
+}
 
-.flex-container{
-    display: flex;
-   flex-wrap: wrap;
-    justify-content: space-between;
+.sign-in-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 2rem;
+}
+
+/* Form Styles */
+.booking-form {
+    padding: 2rem;
+}
+
+.form-row {
+    margin-bottom: 1rem;
+}
+
+.two-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
-.card {
-    flex: 1 1 calc(25% - 20px); 
-    box-sizing: border-box; 
-    border: 1px solid #ddd; 
-    border-radius: 10px; 
-    overflow: hidden; 
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .card:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-  }
-  
-  .card img {
-    width: 100%; 
-    height: 180px; 
-    object-fit: cover; 
-  }
-  
 
-  .card h2 {
-    font-size: 1.2rem;
-    margin: 15px;
-    color: #333;
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.next-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Booking Details Styles */
+.booking-details {
+    background-color: var(--background-gray);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.tour-card {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.tour-card img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.booking-info, .pricing-details {
+    margin: 1.5rem 0;
+}
+
+.info-row, .price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.promo-input {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.apply-btn {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.complete-order-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
+
+
+
+/*=====================Login===================*/
+.login-container {
+    width: 550px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
   }
   
- 
-  .card p {
-    font-size: 0.9rem;
-    margin: 10px 15px 20px;
+  .login-title {
+    font-size: 24px;
+    color: #223367;
+    margin-bottom: 10px;
+  }
+  
+  .login-subtitle {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .signup-link a {
+    color: #f15a24;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
     color: #555;
   }
-  
- 
-  @media (max-width: 992px) {
-    .card {
-      flex: 1 1 calc(33.33% - 20px); 
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .card {
-      flex: 1 1 calc(50% - 20px); 
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .card {
-      flex: 1 1 100%; 
-    }
-  }
-  /* trending */
 
-.trending {
+  .form-options label{
     display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: space-between; 
-    background-color: #555;
-    padding: 2rem;
+    align-items: center;
+    gap: 3px;
+    
   }
-  
-  
-  .trending div {
-    flex: 1 1 calc(25% - 20px); 
-    box-sizing: border-box; 
-    border-radius: 10px; 
-    overflow: hidden; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .trending div:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-  }
-  
+  .form-options label input{
+    width: 12px;
+    height: 12px;
 
-  .trending img {
-    width: 100%; 
-    height: 200px; 
-    object-fit: cover; 
-    border-radius: 10px; 
   }
   
- 
-  @media (max-width: 992px) {
-    .trending div {
-      flex: 1 1 calc(50% - 20px); 
-    }
+  .forgot-password {
+    color: #f15a24;
+    text-decoration: none;
   }
   
-  @media (max-width: 576px) {
-    .trending div {
-      flex: 1 1 100%; 
-    }
+  .forgot-password:hover {
+    text-decoration: underline;
   }
   
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f15a24;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
   
+  .login-button:hover {
+    background-color: #d94d1f;
+  }
+  
+  .divider {
+    margin: 20px 0;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .social-button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-button i {
+    font-size: 18px;
+  }
+  
+  .facebook {
+    color: #1877f2;
+    border-color: #1877f2;
+  }
+  
+  .facebook:hover {
+    background-color: #e6f0ff;
+  }
+  
+  .google {
+    color: #db4437;
+    border-color: #db4437;
+  }
+  
+  .google:hover {
+    background-color: #ffe6e6;
+  }
+/*=====================Login===================*/
+/*=====================Footer===================*/
+/* Footer Styles */
+
+
 /* footer */
 .footer {
   background-color: #f8f8f8;
@@ -412,3 +566,4 @@ header .auth .login {
       width: 100%;
     }
 }
+/*=====================Footer===================*/

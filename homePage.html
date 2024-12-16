@@ -2,38 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link href="styles/home-page.css" rel="stylesheet" />
     <title>Document</title>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src="assets/images/home-page/logo-1.svg"/>
+      <div class="container">
+          <div class="logo">
+              <img src="assets/images/home-page/logo-1.svg"/>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Tour</a></li>
+                  <li><a href="#">Destination</a></li>
+                  <li><a href="#">Activities</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </nav>
+          <div class="auth">
+              <a href="#">SignUp</a>
+              <a href="#" class="login">LogIn</a>
+          </div>
+          <div class="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Tour</a></li>
-                    <li><a href="#">Destination</a></li>
-                    <li><a href="#">Activities</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="auth">
-                <a href="#">Sign Up</a>
-                <a href="#" class="login">Log In</a>
-            </div>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-        </div>
-    </header>
+      </div>
+  </header>
       <div class="container">
         <h2>Featured Tips</h2>
         <div class="flex-container">
@@ -99,7 +108,7 @@
       </div>
       
       <footer class="footer">
-        <div class="container">
+        <div class="footer-container">
           <div class="footer-content">
             <div class="footer-section">
               <div class="contact-info">
@@ -109,14 +118,12 @@
                   <a href="tel:1-800-453-6744">1-800-453-6744</a>
                 </p>
               </div>
-              <div class="follow-us">
-                <p>Follow Us</p>
-                <ul class="ul-links">
-                  <li><a href="#">i</a></li>
-                  <li><a href="#">f</a></li>
-                  <li><a href="#">i</a></li>
-                  <li><a href="#">l</a></li>
-                </ul>
+              <div class="follow-us" >
+                <p class="mx-3">Follow Us</p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
               </div>
             </div>
       
