@@ -1,0 +1,146 @@
+/*blog section*/
+.blog-container{
+    width: 90%;
+    margin: auto;
+    overflow-x: hidden !important;
+  }
+  .blog-section header{
+    min-height: 85vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets//images//Blog/fahrul-azmi-r4qheYoY8Qg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 60%;
+    border-radius: 20px;
+    border: none !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+   
+  }
+  .blog-section header .overlay{
+    position: absolute;
+    background-color: rgba(161, 161, 161, 0.6);
+    left: 0;
+    right: 0;
+    /* border-radius: 20px; */
+    top: 0;
+    bottom: 0;
+    
+  }
+  .blog-section header .header-content h1{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 53px;
+    position: relative;
+   
+  
+  }
+  .blog-section header .header-content p{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 18px;
+    position: relative;
+  }
+  .blog-section header .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none !important;
+    width: 100%;
+    height: auto;
+    margin-bottom: -1px; 
+  
+  }
+  .blog-section header .wave path {
+    border: none !important;
+    stroke: none !important;
+    outline: none !important;
+   
+  
+  }
+  .blog-section .blogs .blogs-btns{
+   
+    display: flex;
+    justify-content: center;
+  
+  }
+  .blog-section .blogs .blogs-btns .blog-btn{
+   
+    text-transform: capitalize;
+    margin-right: 15px;
+    font-size: 19px;
+    border: 1px solid rgb(240,240,240);
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition:  all .4s;
+  
+  }
+  .blog-section .blogs .blogs-btns .blog-btn:hover{
+    background-color:var(--main-color);
+    border: none !important;
+    color: white;
+  
+  
+  }
+  .blog-section .blogs .blogs-btns .blog-btn:focus{
+  
+   box-shadow: none;
+  
+  }
+  .blog-section .blogs .blogs-btns .blog-btn.active{
+    border: 1px solid var(--border-color);
+  
+  }
+  
+  .blog-section .blogs .pagination {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .blog-section .blogs .pagination li {
+    margin: 0 5px;
+    padding: 8px 13px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .blog-section .blogs .pagination li.numb {
+    background-color: white;
+    color: #000;
+  }
+  
+  
+  .blog-section .blogs .pagination li.active {
+    background-color:var(--main-color) ;
+   
+    color: white;
+   
+  }
+  
+  
+  .blog-section .blogs .pagination li.btn {
+    background-color: var(--main-color)!important;
+    color: white;
+    padding: 5px 13px !important;
+  }
+  
+ 
+  
+  .blog-section .blogs .pagination li:hover {
+    background-color: #f1f1f1;
+   
+  }
+  .blog-section .card{
+    border: none;
+  }
