@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viatours - Booking</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./styles/bookingpage.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+          <div class="logo">
+              <img src="assets/images/home-page/logo-1.svg"/>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Tour</a></li>
+                  <li><a href="#">Destination</a></li>
+                  <li><a href="#">Activities</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </nav>
+          <div class="auth">
+              <a href="#">SignUp</a>
+              <a href="#" class="login">LogIn</a>
+          </div>
+          <div class="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+      </div>
+  </header>
+
+    <main class="main-content">
+      <div class="container">
+        <p class="sign-in-text">
+          <a href="#" class="sign-in-link">Sign in</a> to book with your saved
+          details or <a href="#" class="register-link">register</a> to manage
+          your bookings on the go!
+        </p>
+        <div class="content-wrapper">
+          <div class="booking-form">
+            <h1>Let us know who you are</h1>
+            <form id="bookingForm">
+              <div class="form-row">
+                <input
+                  type="text"
+                  id="fullName"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="form-row two-cols">
+                <input type="email" id="email" placeholder="Email" required />
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+              <div class="form-row two-cols">
+                <input
+                  type="text"
+                  id="country"
+                  placeholder="Country"
+                  required
+                />
+                <input type="text" id="city" placeholder="City" required />
+              </div>
+              <div class="form-row">
+                <input
+                  type="text"
+                  id="address1"
+                  placeholder="Address 1"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <input type="text" id="address2" placeholder="Address 2" />
+              </div>
+              <div class="form-row two-cols">
+                <input
+                  type="text"
+                  id="state"
+                  placeholder="State/Province/Region"
+                  required
+                />
+                <input
+                  type="text"
+                  id="zip"
+                  placeholder="ZIP code/Postal code"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <textarea
+                  id="tourContent"
+                  placeholder="Tour Content"
+                  rows="4"
+                ></textarea>
+              </div>
+              <div class="form-row">
+                <div class="checkbox-container">
+                  <input type="checkbox" required />
+                  <span class="checkmark"></span>
+                  <label for="">  By proceeding with this booking, I agree to tourz Terms of Use
+                    and Privacy Policy.</label>
+                
+                </div>
+              </div>
+              <button type="submit" class="next-btn">Next</button>
+            </form>
+          </div>
+
+          <div class="booking-details">
+            <h2>Your booking details</h2>
+            <div class="tour-card">
+              <img
+                src="./assets/images/booking-page/photo-1.jpg"
+                alt="Tour"
+                width="80"
+                height="80"
+              />
+              <div class="tour-info">
+                <h3>Zipline 18 Platform and ATV Adventure Tour From Phuket</h3>
+              </div>
+            </div>
+            <div class="booking-info">
+              <div class="info-row">
+                <span>Date:</span>
+                <span>06 April 2023</span>
+              </div>
+              <div class="info-row">
+                <span>Time:</span>
+                <span>10:00 am</span>
+              </div>
+              <div class="info-row">
+                <span>Duration:</span>
+                <span>12 Days</span>
+              </div>
+            </div>
+            <div class="pricing-details">
+              <div class="price-row">
+                <span>Adult x2</span>
+                <span>$98</span>
+              </div>
+              <div class="price-row">
+                <span>Youth x3</span>
+                <span>$383</span>
+              </div>
+              <div class="price-row">
+                <span>Children x6</span>
+                <span>$394</span>
+              </div>
+            </div>
+            <div class="promo-code-section">
+              <h3>Do you have a promo code?</h3>
+              <div class="promo-input">
+                <input type="text" placeholder="Promo code" />
+                <button class="apply-btn">Apply</button>
+              </div>
+            </div>
+            <button class="complete-order-btn">Complete My Order</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="contact-info">
+              <img src="./assets//images/home-page/customer.png" alt="Phone" width="24" height="24" />
+              <p>
+                Speak to our expert at
+                <a href="tel:1-800-453-6744">1-800-453-6744</a>
+              </p>
+            </div>
+            <div class="follow-us" >
+              <p class="mx-3">Follow Us</p>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+    
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h4>Contact</h4>
+              <p>328 Queensberry Street, North Melbourne VIC3051</p>
+              <p>Australia</p>
+              <a href="mailto:hi@viatours.com">hi@viatours.com</a>
+            </div>
+            <div class="footer-column">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Tour Reviews</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Travel Guides</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#">Get in Touch</a></li>
+                <li><a href="#">Help center</a></li>
+                <li><a href="#">Live chat</a></li>
+                <li><a href="#">How it works</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Newsletter</h4>
+              <p>Subscribe to the free newsletter and stay up to date</p>
+              <div class="newsletter-form">
+                <input type="email" placeholder="Your email address" />
+                <button>Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/booking-page.js"></script>
+    <script src="js/home-page.js"></script>
+  </body>
+</html>

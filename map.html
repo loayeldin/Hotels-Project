@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viatours Contact Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/map.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+        <div class="logo">
+            <img src="assets/images/home-page/logo-1.svg"/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <a href="#">SignUp</a>
+            <a href="#" class="login">LogIn</a>
+        </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    </div>
+</header>
+<div class="map"></div>
+<div class="map-section">
+  <div class="my-container">
+    <!-- Map Section -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27291.670830020783!2d30.008725899999998!3d31.2357186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1733692510374!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-iframe"></iframe>
+    </div>
+  
+    <!-- Contact Information Section -->
+    <div class="contact-info-section">
+      <div class="regions">
+        <div class="region">
+            <h2>North America</h2>
+            <p>123 Example St, City, State, ZIP</p>
+            <p>1-800-123-4567</p>
+        </div>
+        <div class="region">
+            <h2>Australia</h2>
+            <p>456 Sample Rd, Melbourne, VIC</p>
+            <p>1-800-765-4321</p>
+        </div>
+        <div class="region">
+            <h2>Europe</h2>
+            <p>789 Test Ave, London, UK</p>
+            <p>1-800-987-6543</p>
+        </div>
+        <div class="region">
+            <h2>Asia</h2>
+            <p>321 Demo Blvd, Tokyo, Japan</p>
+            <p>1-800-543-2109</p>
+        </div>
+      </div>
+      <div class="leave-info">
+            <form>
+                <h2>Leave us your info</h2>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" rows="4" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+      </div>
+</div>
+</div>
+</div>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="contact-info">
+          <img src="./assets//images/home-page/customer.png" alt="Phone" width="24" height="24" />
+          <p>
+            Speak to our expert at
+            <a href="tel:1-800-453-6744">1-800-453-6744</a>
+          </p>
+        </div>
+        <div class="follow-us" >
+          <p class="mx-3">Follow Us</p>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p>328 Queensberry Street, North Melbourne VIC3051</p>
+          <p>Australia</p>
+          <a href="mailto:hi@viatours.com">hi@viatours.com</a>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Tour Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Travel Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Get in Touch</a></li>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Live chat</a></li>
+            <li><a href="#">How it works</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Newsletter</h4>
+          <p>Subscribe to the free newsletter and stay up to date</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address" />
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
