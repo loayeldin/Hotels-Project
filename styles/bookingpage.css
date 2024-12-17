@@ -115,6 +115,9 @@ header .auth .login {
   background: #333;
   transition: transform 0.3s, opacity 0.3s;
 }
+header nav .active{
+  color:var(--primary-color);
+}
 @media (max-width: 1200px) { 
   header .container {
    

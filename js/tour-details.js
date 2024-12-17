@@ -93,3 +93,38 @@ document.addEventListener("DOMContentLoaded", function () {
     this.textContent = "★".repeat(rating) + "☆".repeat(5 - rating);
   });
 });
+const bestsellerSpan = document.querySelector('.bestseller');
+
+bestsellerSpan.addEventListener('mouseover', () => {
+  bestsellerSpan.style.color = 'orange';
+});
+
+bestsellerSpan.addEventListener('mouseout', () => {
+  bestsellerSpan.style.color = '#999';
+});
+// Function to update ticket count
+function updateTicketCount(type, delta) {
+  let countElement = document.getElementById(type + 'Count');
+  let currentCount = parseInt(countElement.textContent);
+  let newCount = Math.max(0, currentCount + delta);
+  countElement.textContent = newCount;
+  updateTotalPrice();
+}
+
+// Function to update the total price based on ticket counts and add-ons
+function updateTotalPrice() {
+  let adultCount = parseInt(document.getElementById('adultCount').textContent);
+  let youthCount = parseInt(document.getElementById('youthCount').textContent);
+  let childrenCount = parseInt(document.getElementById('childrenCount').textContent);
+  let serviceBooking = document.getElementById('serviceBooking').checked ? 40 : 0;
+  let servicePerPerson = document.getElementById('servicePerPerson').checked ? (adultCount * 17 + youthCount * 14) : 0;
+
+  let total = (adultCount * 282) + (youthCount * 168) + (childrenCount * 80) + serviceBooking + servicePerPerson;
+  document.getElementById('totalPrice').textContent = total;
+}
+
+// Function to handle the booking action
+function bookNow() {
+  alert('Booking Confirmed!');
+}
+
