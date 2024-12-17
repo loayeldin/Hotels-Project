@@ -3,12 +3,12 @@ import { Navigate, Route, RouterProvider, createBrowserRouter, createRoutesFromE
 import RootLayout from './Routes/RootLayout';
 import HomePage from './pages/homepage/HomePage'
 import Login from './pages/login/Login'
-import PostComment from './pages/postcomment/PostComment'
 import Map from './pages/map/Map'
 import TourDetails from './pages/tourdetails/TourDetails'
 import Blog from './pages/blog/Blog'
 import Explore from './pages/explore/Explore.jsx';
 import Booking from './pages/booking/Booking.jsx';
+import Destination from './pages/postcomment/Destination';
 
 
 
@@ -26,7 +26,7 @@ const router = createBrowserRouter(
       <Route  path ='explore' element={<Explore/>} />
       <Route  path ='booking' element={<Booking/>}/>
       <Route  path ='login' element={<Login/>}/>
-      <Route  path ='postcomment' element={<PostComment/>}/>
+      <Route  path ='postcomment' element={<Destination/>}/>
       <Route  path ='details' element={<TourDetails/>}/>
       <Route  path ='map' element={<Map/>}/>
     </Route>

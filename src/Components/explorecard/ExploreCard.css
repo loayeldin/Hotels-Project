@@ -1,0 +1,93 @@
+
+ .explore-card .card{
+  position: relative;
+ }
+ .explore-card  img{
+   object-fit: cover;
+   border-radius: 20px;
+ }
+ .explore-card  .card-offer{
+   position: absolute;
+   left: 5%;
+   top: 6%;
+   background-color: var(--main-color);
+   padding: 6px;
+   border-radius: 10px;
+   color: white;
+ }
+ .explore-card  .love{
+   position: absolute;
+   top: 6%;
+   right: 6%;
+   background-color: white;
+   padding: 6px 10px;
+   border-radius: 50%;
+   color: white;
+ }
+ .explore-card  .featured{
+   position: absolute;
+   left: 5%;
+   top: 0%;
+   background-color: var(--text-color);
+   padding: 6px;
+   border-radius: 10px;
+   color: white;
+ }
+.explore-card  .love .fa-heart {
+   color: black;
+   font-size: 17px;
+ }
+.explore-card  .card-body .star-icon{
+     color: #e2ad64;
+ }
+ .explore-card  .card-body .features{
+   text-transform: capitalize;
+   color: var(--main-color);
+ }
+ .explore-card  .card-body .flex-wrapper{
+   border-left: 1px solid #d5dae2;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+ }
+  .explore-card  .card-body .flex-wrapper .duration{
+   text-transform: capitalize;
+  
+   color: var(--text-color);
+ }
+ .explore-card  .card-body .flex-wrapper .price-details{
+   text-align: center;
+ }
+.explore-card  .card-body .flex-wrapper .price-details del{
+   color: #d5dae2;
+ }
+ .explore-card  .card-body .flex-wrapper .price-details .price{
+   font-size: 19px;
+   font-weight: 500;
+ }
+  .explore-card  .card-body .flex-wrapper .price-details .details-btn{
+   color: var(--main-color);
+   border: 1px solid var(--main-color);
+   border-radius: 10px;
+   text-transform: capitalize;
+   padding: 17px 33px ;
+ }
+ .explore-card  .card-body .flex-wrapper .price-details .details-btn a{
+   color: var(--main-color);
+  
+ }
+ .explore-card  .card-body .flex-wrapper .price-details .details-btn .arrow-icon{
+   transform: rotate(-45deg);
+   margin-left: 5px;
+ }
+ @media (max-width: 768px) {
+    .explore-card  .card-body .flex-wrapper{
+      border-top: 1px solid #d5dae2;
+      padding-top: 20px;
+      border-left: none;
+   
+    }
+    
+  }

@@ -141,4 +141,6 @@
     background-color: #f1f1f1;
    
   }
-  
+  .blog-section .card{
+    border: none;
+  }

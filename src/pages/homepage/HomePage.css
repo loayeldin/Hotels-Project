@@ -154,7 +154,51 @@
     cursor: pointer;
     color: var(--text-color);
   }
+  .popular .mycard{
+    height: 660px;
   
+  
+  }
+  .popular .mycard .label-text{
+    position: absolute;
+    font-size: 22px;
+    color: white;
+    bottom: 50px;
+    left: 50px;
+  
+  }
+  .popular .img-card {
+    height: 322px;
+  
+  
+    box-sizing: border-box;
+  }
+  
+  .popular img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  @media (max-width: 768px) {
+    .popular .mycard{
+      height: auto;
+    
+    
+    }
+    .popular .img-card {
+      height: 322px;
+    
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+    .popular .responsive-card{
+      height: 322px !important;
+      margin: 10px 6px;
+    }
+  
+  
+  }
 /*  end popular styles*/
   
 /*  start tourZ styles*/
@@ -256,3 +300,111 @@
     color: var(--text-color);
   }
   /*  end featured styles*/
+  /*  start trending styles*/
+
+.trending{
+ 
+  background-color: rgb(5,7,60);
+  padding: 150px 0px;
+}
+.trending h2{
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color:white;
+}
+.trending span {
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+.trending .fa-arrow-right-long {
+  transform: rotate(-45deg);
+  cursor: pointer;
+  color: white;
+}
+
+.trending .card-img{
+  height: 550px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+.trending .card-img img {
+  object-fit: fill;
+  border-radius: 15px;
+  transition: all .4s ease-in-out;
+}
+.trending .card-img .label-text{
+position: absolute;
+bottom: 50px;
+text-align: center;
+color: white;
+left: 50%;
+transform: translateX(-50%);
+}
+.trending .card-img:hover img{
+  transform: scale(1.1);
+}
+/*  end featured styles*/
+.articles{
+ 
+  margin: 100px 0px;
+}
+.articles h2{
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color:var(--text-color);
+}
+.articles span {
+  font-size: 18px;
+  cursor: pointer;
+  color:var(--text-color);
+}
+.articles .fa-arrow-right-long {
+  transform: rotate(-45deg);
+  cursor: pointer;
+  color:var(--text-color);
+}
+.articles .card{
+  border: none;
+}
+
+/*  end articles styles*/
+/*  start offer styles*/
+
+.offer{
+  background-color:var(--main-color);
+  color: white;
+  min-height: 550px;
+  background-image: url('../../assets/images/home-page/offer2-removebg.png');
+  background-repeat: no-repeat;
+  background-position: 90% 10%;
+ 
+}
+.offer .offer-content{
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  justify-content: center; 
+  padding: 20px; 
+  min-height: 550px; 
+}
+.offer .offer-content input {
+  width: 350px !important;
+} 
+.offer .offer-content .send-btn {
+  background-color: white;
+  color: var(--text-color);
+  text-transform: capitalize;
+  padding: 10px 30px;
+}
+.offer .offer-content button .offer-icon {
+  transform: rotate(-45deg);
+  cursor: pointer;
+  margin-left: 10px;
+  color:var(--text-color);
+}
+
+/*  end offer styles*/
