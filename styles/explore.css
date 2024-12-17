@@ -24,6 +24,9 @@ body {
   font-family: "Jost", sans-serif;
 
 }
+a{
+  text-decoration: none;
+}
 .explore-container{
   width: 90%;
   margin: auto;
@@ -162,6 +165,10 @@ body {
   border-radius: 10px;
   text-transform: capitalize;
   padding: 17px 33px ;
+}
+.explore-section .hotels .hotels-cards .card-body .flex-wrapper .price-details .details-btn a{
+  color: var(--main-color);
+ 
 }
 .explore-section .hotels .hotels-cards .card-body .flex-wrapper .price-details .details-btn i{
   transform: rotate(-45deg);
@@ -476,6 +483,9 @@ header .auth .login {
   height: 3px;
   background: #333;
   transition: transform 0.3s, opacity 0.3s;
+}
+header nav .active{
+  color:var(--main-color);
 }
 @media (max-width: 1200px) { 
   header .container {
