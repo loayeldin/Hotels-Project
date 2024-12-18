@@ -74,7 +74,7 @@ function Booking() {
                     rows="4"
                   ></textarea>
                 </div>
-                <div className="form-row submit-form">
+                <div className=" submit-form">
                   <label className="checkbox-container">
                     <input type="checkbox" required />
                     <span className="checkmark"></span>

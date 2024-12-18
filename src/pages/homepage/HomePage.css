@@ -156,7 +156,8 @@
   }
   .popular .mycard{
     height: 660px;
-  
+   
+    border-radius: 20px;
   
   }
   .popular .mycard .label-text{
@@ -170,8 +171,8 @@
   .popular .img-card {
     height: 322px;
   
-  
-    box-sizing: border-box;
+   
+
   }
   
   .popular img {
@@ -180,6 +181,8 @@
     height: 100%;
     object-fit: cover; 
   }
+ 
+ 
   @media (max-width: 768px) {
     .popular .mycard{
       height: auto;

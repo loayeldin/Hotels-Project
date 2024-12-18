@@ -24,6 +24,7 @@ import trendingimg3 from'../../assets/images/home-page/bali.jpg'
 import blogImg1 from'../../assets/images/Blog/luke-porter-NEqEC7qa9FM-unsplash.jpg'
 import blogImg2 from'../../assets/images/Blog/blog2.jpg'
 import blogImg3 from'../../assets/images/Blog/blog3.jpg'
+import { Link, NavLink } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -76,50 +77,52 @@ function HomePage() {
           <h2>popular things to do</h2>
           <div >
           
-              <span>see all</span>
-            
-              <FontAwesomeIcon icon={faArrowRightLong} className="popular-icon"/>
+          <Link to="/details">
+                <span  span>see all</span>
+                <FontAwesomeIcon icon={faArrowRightLong} className="popular-icon"/>
+              
+             </Link>
            
           </div>
         </div>
         <div className="row mycard">
           <div className="col-lg-4 col-md-4 position-relative h-100 responsive-card"  >
-            <a href="tour-details.html">
+            <Link to="/details">
               <img src={popularimg1} alt="img"/>
               <span className="label-text text-capitalize"> cruises</span>
-            </a>
+            </Link>
           </div>
           <div className="col-lg-8 col-md-8 ">
             <div className="row g-3" >
               <div className="col-lg-4 col-md-6 position-relative" >
-                <a href="tour-details.html">
+                <Link to="/details">
                   <img src={popularimg4} className="img-card"  alt="img"/>
                 <span className="label-text text-capitalize"> beach tours</span>
-                </a>
+                </Link>
               </div>
               <div className="col-lg-8 col-md-6 position-relative">
-                <a href="tour-details.html">
+                <Link to="/details">
                   <img src={popularimg3} className="img-card"  alt="img"/>
                   <span className="label-text text-capitalize"> city tours</span>
-                </a>
+                </Link>
               </div>
               <div className="col-lg-4 col-md-4 position-relative">
-                <a href="tour-details.html">
+                <Link to="/details">
                   <img src={popularimg2} className="img-card" alt="img"/>
                   <span className="label-text text-capitalize"> museum tour</span>
-                </a>
+                </Link>
               </div>
               <div className="col-lg-3 col-md-4 position-relative">
-                <a href="./tour-details.html">
+                <Link to="/details">
                   <img src={popularimg5} className="img-card" alt="img"/>
                   <span className="label-text text-capitalize"> food</span>
-                </a>
+                </Link>
               </div>
               <div className="col-lg-5 col-md-4 position-relative">
-                <a href="tour-details.html">
+                <Link to="/details">
                   <img src={popularimg6} className="img-card" alt="img"/>
                   <span className="label-text text-capitalize"> hiking</span>
-                </a>
+                </Link>
               </div>
               
             </div>
@@ -180,50 +183,68 @@ function HomePage() {
           <div className="d-flex justify-content-between align-items-center">
             <h2>featured trips</h2>
             <div>
-              <span>see all</span>
-              <FontAwesomeIcon icon={faArrowRightLong} className="popular-icon"/>
+             <Link to="/details">
+                <span  span>see all</span>
+                <FontAwesomeIcon icon={faArrowRightLong} className="popular-icon"/>
               
+             </Link>
             </div>
           </div>
           <div class="row g-4">
             <div class="col-xl-3 col-lg-4 col-md-6">
-              <FeaturedCard img={popularimg2}/>
+              <Link to="/details">
+                <FeaturedCard img={popularimg2}/>
+              </Link>
         
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6">
               
-              <FeaturedCard img={popularimg5}/>
+            <Link to="/details">
+                <FeaturedCard img={featureImg5}/>
+              </Link>
           
             </div>
 
             <div class="col-xl-3 col-lg-4 col-md-6">
             
+            <Link to="/details">
                 <FeaturedCard img={featureImg1}/>
+              </Link>
             
         
             </div>
 
             <div className="col-xl-3 col-lg-4 col-md-6">
           
-              <FeaturedCard img={featureImg2}/>
+            <Link to="/details">
+                <FeaturedCard img={featureImg2}/>
+              </Link>
             
               
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6">
-              <FeaturedCard img={featureImg3}/>
+            <Link to="/details">
+                <FeaturedCard img={featureImg3}/>
+              </Link>
             </div>
 
             <div className="col-xl-3 col-lg-4 col-md-6">
-              <FeaturedCard img={featureImg4}/>
+            <Link to="/details">
+                <FeaturedCard img={featureImg4}/>
+              </Link>
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6">
           
-              <FeaturedCard img={featureImg5}/>
+            <Link to="/details">
+                <FeaturedCard img={featureImg5}/>
+              </Link>
           
             </div>
 
             <div className="col-xl-3 col-lg-4 col-md-6">
-              <FeaturedCard img={featureImg6}/>
+            <Link to="/details">
+                <FeaturedCard img={featureImg6}/>
+              </Link>
 
             </div>
             
@@ -237,54 +258,57 @@ function HomePage() {
           <h2>trending destinations</h2>
           <div>
           
-              <span>see all</span>
-              <FontAwesomeIcon icon={faArrowRightLong} className="popular-icon"/>
+          <Link to="/details">
+                <span  span>see all</span>
+                <FontAwesomeIcon icon={faArrowRightLong} className="popular-icon"/>
+              
+             </Link>
         
           </div>
         </div>
         <div className="row my-3 g-3">
           <div className="col-lg-3 col-md-6">
            <div className="card-img">
-              <a href="explore.html">
+              <Link to="/explore">
                 <img  className="w-100 h-100" src={popularimg1} alt="trend img"/>
                 <div className="label-text">
                   <h4 className="text-capitalize">paris</h4>
                   <span className="text-capitalize">100+ Tours</span>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
             <div className="card-img">
-               <a href="explore.html">
+               <Link to="/explore">
                 <img  className="w-100 h-100" src={trendingimg1}  alt="trend img"/>
                 <div className="label-text">
                   <h4 className="text-capitalize">roma</h4>
                   <span className="text-capitalize">100+ Tours</span>
                 </div>
-               </a>
+               </Link>
              </div>
            </div>
            <div className="col-lg-3 col-md-6">
             <div className="card-img">
-              <a href="explore.html">
+              <Link to="/explore">
                 <img  className="w-100 h-100" src={trendingimg2}  alt="trend img"/>
                 <div className="label-text">
                   <h4 className="text-capitalize">phuket</h4>
                   <span className="text-capitalize">100+ Tours</span>
                 </div>
-              </a>
+              </Link>
              </div>
            </div>
            <div className="col-lg-3 col-md-6">
             <div className="card-img">
-               <a href="explore.html">
+               <Link to="/explore">
                 <img  className="w-100 h-100" src={trendingimg3}  alt="trend img"/>
                 <div className="label-text">
                   <h4 className="text-capitalize">bali</h4>
                   <span className="text-capitalize">100+ Tours</span>
                 </div>
-               </a>
+               </Link>
              </div>
            </div>
 
@@ -297,23 +321,29 @@ function HomePage() {
         <div className="d-flex justify-content-between align-items-center">
           <h2>travel articles</h2>
           <div>
-          
-              <span>see all</span>
-              <FontAwesomeIcon icon={faArrowRightLong} className="popular-icon"/>
-          
+          <Link to="/details">
+                <span  span>see all</span>
+                <FontAwesomeIcon icon={faArrowRightLong} className="popular-icon"/>
+              
+             </Link>
           </div>
         </div>
         <div className="row my-4">
           <div className="col-lg-4 col-md-6 mb-4">
-              <BlogCard img={blogImg1}/>
+              <Link to="/blog">
+                <BlogCard img={blogImg1}/>
+              </Link>
           </div>
           <div className="col-lg-4 col-md-6 mb-4">
-              <BlogCard img={blogImg2}/>
-
+          <Link to="/blog">
+                <BlogCard img={blogImg2}/>
+              </Link>
          
           </div>
           <div className="col-lg-4 col-md-6 mb-4">
-            <BlogCard img={blogImg3}/>
+          <Link to="/blog">
+                <BlogCard img={blogImg3}/>
+              </Link>
           
           </div>
         </div>
