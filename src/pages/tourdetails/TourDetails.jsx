@@ -108,11 +108,11 @@ function TourDetails() {
         </div>
         <section className="image-grid">
           <div className="main-image">
-            <img src={image1} alt="Main" />
+            <img src={image1} alt="Main" loading="lazy"/>
           </div>
           <div className="side-images">
-            <img src={image2} alt="Image 2" />
-            <img src={image3} alt="Image 3" />
+            <img src={image2} alt="Image 2" loading="lazy" />
+            <img src={image3} alt="Image 3" loading="lazy"/>
           </div>
           <button className="see-photos">See all photos</button>
         </section>
@@ -280,7 +280,7 @@ function TourDetails() {
             <div className="tour-grid">
               {["London City Tour", "Tower Bridge Experience", "Thames River Cruise"].map((tour, index) => (
                 <div className="tour-card" key={index}>
-                  <img src={image7} alt="Image 7" />
+                  <img src={image7} alt="Image 7" loading="lazy" />
                   <div className="tour-card-content">
                     <h3>{tour}</h3>
                     <div className="tour-card-rating">★★★★★</div>

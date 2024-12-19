@@ -12,6 +12,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+
 }
 .map-section .map-section__map {
   width: 100%;
@@ -55,7 +56,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 55%;
 }
 .map-section .map-section__input,
 .map-section .map-section__textarea {

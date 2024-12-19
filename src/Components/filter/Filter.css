@@ -8,6 +8,7 @@
    
   }
   
+  
 .filter-cat .accordion-header .accordion-button{
     font-size: 18px !important;
     font-weight: 600;
@@ -36,4 +37,34 @@
     background-color: var(--text-color); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
-  
+
+
+  .form-check {
+    display: flex !important;
+    color: var(--text-color) !important;
+    align-items: center !important;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: .125rem;
+  }
+
+.custom-checkbox .form-check-input {
+  transform: scale(0.8) !important; /* Scale down the size */
+  cursor: pointer;
+ 
+ 
+}
+
+.form-range::-webkit-slider-thumb {
+  background-color: var(--main-color) !important;
+}
+
+/* For Firefox */
+.form-range::-moz-range-thumb {
+  background-color: var(--main-color) !important;
+}
+
+/* For IE and Edge (Legacy) */
+.form-range::-ms-thumb {
+  background-color: var(--main-color) !important;
+}

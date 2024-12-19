@@ -77,7 +77,7 @@ function HomePage() {
           <h2>popular things to do</h2>
           <div >
           
-          <Link to="/details">
+          <Link to="/explore">
                 <span  span>see all</span>
                 <FontAwesomeIcon icon={faArrowRightLong} className="popular-icon"/>
               
@@ -88,7 +88,7 @@ function HomePage() {
         <div className="row mycard">
           <div className="col-lg-4 col-md-4 position-relative h-100 responsive-card"  >
             <Link to="/details">
-              <img src={popularimg1} alt="img"/>
+              <img src={popularimg1} alt="img" loading="lazy"/>
               <span className="label-text text-capitalize"> cruises</span>
             </Link>
           </div>
@@ -96,31 +96,31 @@ function HomePage() {
             <div className="row g-3" >
               <div className="col-lg-4 col-md-6 position-relative" >
                 <Link to="/details">
-                  <img src={popularimg4} className="img-card"  alt="img"/>
+                  <img src={popularimg4} className="img-card" loading="lazy"  alt="img"/>
                 <span className="label-text text-capitalize"> beach tours</span>
                 </Link>
               </div>
               <div className="col-lg-8 col-md-6 position-relative">
                 <Link to="/details">
-                  <img src={popularimg3} className="img-card"  alt="img"/>
+                  <img src={popularimg3} className="img-card" loading="lazy"  alt="img"/>
                   <span className="label-text text-capitalize"> city tours</span>
                 </Link>
               </div>
               <div className="col-lg-4 col-md-4 position-relative">
                 <Link to="/details">
-                  <img src={popularimg2} className="img-card" alt="img"/>
+                  <img src={popularimg2} className="img-card" loading="lazy" alt="img"/>
                   <span className="label-text text-capitalize"> museum tour</span>
                 </Link>
               </div>
               <div className="col-lg-3 col-md-4 position-relative">
                 <Link to="/details">
-                  <img src={popularimg5} className="img-card" alt="img"/>
+                  <img src={popularimg5} className="img-card" loading="lazy" alt="img"/>
                   <span className="label-text text-capitalize"> food</span>
                 </Link>
               </div>
               <div className="col-lg-5 col-md-4 position-relative">
                 <Link to="/details">
-                  <img src={popularimg6} className="img-card" alt="img"/>
+                  <img src={popularimg6} className="img-card" loading="lazy" alt="img"/>
                   <span className="label-text text-capitalize"> hiking</span>
                 </Link>
               </div>
@@ -183,7 +183,7 @@ function HomePage() {
           <div className="d-flex justify-content-between align-items-center">
             <h2>featured trips</h2>
             <div>
-             <Link to="/details">
+             <Link to="/explore">
                 <span  span>see all</span>
                 <FontAwesomeIcon icon={faArrowRightLong} className="popular-icon"/>
               
@@ -258,7 +258,7 @@ function HomePage() {
           <h2>trending destinations</h2>
           <div>
           
-          <Link to="/details">
+          <Link to="/explore">
                 <span  span>see all</span>
                 <FontAwesomeIcon icon={faArrowRightLong} className="popular-icon"/>
               
@@ -321,7 +321,7 @@ function HomePage() {
         <div className="d-flex justify-content-between align-items-center">
           <h2>travel articles</h2>
           <div>
-          <Link to="/details">
+          <Link to="/blog">
                 <span  span>see all</span>
                 <FontAwesomeIcon icon={faArrowRightLong} className="popular-icon"/>
               
