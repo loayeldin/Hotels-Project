@@ -207,20 +207,20 @@ function TourDetails() {
                     <strong>Ticket Options</strong>
                   </label>
                   {["adult", "youth", "children"].map((type) => (
-                    <div className="ticket-counter mb-2" key={type}>
+                    <div className="ticket-counter mb-2 " key={type}>
                       <span>
                         {type.charAt(0).toUpperCase() + type.slice(1)} (${ticketPrices[type]})
                       </span>
                       <div>
                         <button
-                          className="btn btn-sm"
+                          className="btn btn-sm me-2"
                           onClick={() => updateTicketCount(type, -1)}
                         >
                           -
                         </button>
                         <span>{ticketCounts[type]}</span>
                         <button
-                          className="btn btn-sm"
+                          className="btn btn-sm ms-2"
                           onClick={() => updateTicketCount(type, 1)}
                         >
                           +
@@ -250,6 +250,10 @@ function TourDetails() {
                     <label htmlFor="servicePerPerson">
                       Add Service Per Person (Adult: $17, Youth: $14)
                     </label>
+                  </div>
+                  <div>
+                    
+
                   </div>
                 </div>
 

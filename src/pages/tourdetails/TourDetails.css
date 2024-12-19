@@ -399,8 +399,11 @@ margin-top: 80px;
   line-height: 1;
   font-size: 15px;
 }
+
 .add-extra input {
   margin-right: 10px;
+  width: auto !important;
+
 }
 .total-price {
   font-weight: bold;
